@@ -2,5 +2,5 @@
 - name: Playbook used to setup dns on top of rhel
   hosts: all
   gather_facts: yes
-  roles:
+  collections:
     - rhel.repos.dns
