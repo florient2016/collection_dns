@@ -1,12 +1,12 @@
 ---
 - name: Playbook used to deploy wordpress and mariadb server
   hosts: all
-  collections:
-    - rhel.repo
+  roles:
+    - dns
   tasks:
     - name: Welcome to my application using collection role
       debug:
         msg: "Welcome to collection and roles application"
-    - name: Import a role
-      ansible.builtin.import_role:
-        name: dns
+    #- name: Import a role
+     # ansible.builtin.import_role:
+      #  name: dns
