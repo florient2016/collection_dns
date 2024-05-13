@@ -3,7 +3,4 @@
   hosts: all
   collections:
     - rhel.repos
-  tasks:
-    - name: Import a role
-      ansible.builtin.import_role:
-        name: dns
+ 
